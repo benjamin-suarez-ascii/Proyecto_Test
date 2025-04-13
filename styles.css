@@ -23,7 +23,7 @@ h1 {
 .character {
     cursor: pointer;
     transition: transform 0.3s ease;
-    width: 150px; /* Ancho fijo para que las imágenes se ajusten */
+    width: 150px; 
     text-align: center;
 }
 
@@ -43,15 +43,14 @@ p {
     margin-top: 10px;
 }
 
-/* Esto asegura que haya 6 imágenes por fila */
 @media (min-width: 768px) {
     .character {
-        width: 150px;  /* Ajustar el tamaño de las imágenes */
+        width: 150px;
     }
 }
 
 @media (max-width: 767px) {
     .character {
-        width: 100px;  /* Reduce el tamaño para pantallas más pequeñas */
+        width: 100px;
     }
 }

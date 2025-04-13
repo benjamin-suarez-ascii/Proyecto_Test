@@ -1,21 +1,16 @@
-// Variable para almacenar el audio actual
 let currentAudio = null;
 
-// Función para reproducir y detener el audio anterior si es necesario
 function playAudio(id, audioFile) {
-    // Si ya hay un audio reproduciéndose, detenerlo
     if (currentAudio && !currentAudio.paused) {
         currentAudio.pause();
-        currentAudio.currentTime = 0;  // Reinicia el audio detenido
+        currentAudio.currentTime = 0; 
     }
 
-    // Crear un nuevo objeto Audio y asignarle un id único
     const audio = new Audio(audioFile);
     audio.play();
-    currentAudio = audio;  // Asignar el audio actual para futuras referencias
+    currentAudio = audio; 
 }
 
-// Añadir eventos a los personajes
 document.getElementById('bombardino-crocodillo').addEventListener('click', function() {
     playAudio('audio-bombardino', 'audios/bombardilo.mp3');
 });
