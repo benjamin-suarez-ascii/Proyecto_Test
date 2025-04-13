@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #4a4a4a;
+    margin-top: 20px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.character {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 150px; /* Ancho fijo para que las imágenes se ajusten */
+    text-align: center;
+}
+
+.character-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.character:hover {
+    transform: scale(1.1);
+}
+
+p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Esto asegura que haya 6 imágenes por fila */
+@media (min-width: 768px) {
+    .character {
+        width: 150px;  /* Ajustar el tamaño de las imágenes */
+    }
+}
+
+@media (max-width: 767px) {
+    .character {
+        width: 100px;  /* Reduce el tamaño para pantallas más pequeñas */
+    }
+}
